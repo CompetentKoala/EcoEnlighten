@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="/main/main.css" />
+    <link rel="stylesheet" href="/main/missions.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" />
+</head>
+<header></header>
+
+<body>
+    <div class="stars"></div>
+
+    <div class="left-area">
+        <p class="left-menu-header"><span class="left-header-img"><img class="icon" src="/main/icons/LOGO.png" alt=""></span><span class="left-header-text">EcoEnlighten</span></p>
+        <div class="left-menu-box">
+            <div onclick="setMenuSelection(1)" class="left-menu-item home"><img src="/main/icons/house.png" alt="Home"><span>LEARN</span></div>
+            <div onclick="setMenuSelection(2)" class="left-menu-item leaderboard"><img src="/main/icons/medal.png" alt="Leaderboard"><span>LEADERBOARD</span></div>
+            <div onclick="setMenuSelection(3)" class="left-menu-item mission"><img src="/main/icons/treasure-chest.png" alt="Quests"><span>MISSIONS</span></div>
+            <div onclick="setMenuSelection(4)" class="left-menu-item market"><img src="/main/icons/market.png" alt="market"><span>MARKETS</span></div>
+            <div onclick="setMenuSelection(5)" class="left-menu-item profile"><img src="/main/icons/woman.png" alt="Home"><span>PROFILE</span></div>
+            <div onclick="setMenuSelection(6)" class="left-menu-item other"><img src="/icons/other.svg" alt="Home"><span>MORE</span></div>
+        </div>
+    </div>
+
+<div class="center-area-global">
+
+
+    <div class="center-area-mission-1">
+        <div class="center-area-mission-1-1">
+            <p class="center-area-mission-1-1-1">Welcome!</p>
+            <p class="center-area-mission-1-1-2">Complete quests to earn rewards! Quests refresh every day.</p>
+        </div>
+        <div class="center-area-mission-1-2">
+            <img class="earthguysmile" src="/main/icons/earthguysmile.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="center-area-mission-2">
+        <div class="center-area-mission-2-1">
+            <p class="center-area-mission-2-1-1">Daily Quests</p>
+            <p class="center-area-mission-2-1-2">13 Hours Left</p>
+        </div>
+        <div class='right-menu-item-2-2-2 center-area-mission-2-2'>
+            <img src="/main/icons/lightning.png" alt="">
+            <div class='center-area-mission-2-2-1'>
+                <div class='center-area-mission-2-2-1-1'>
+                    <p>Earn 10 XP</p>
+                </div>
+                <div class='center-area-mission-2-2-1-2'>
+                    <div class="progress-bar">0 / 10</div>
+                    <img class="treasure-chest" src="/main/icons/treasure-chest.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-area-mission-3">
+        <img class="locked-mission" src="/main/icons/lock.png" alt="">
+        <p class="center-area-mission-3-1">More quests unlock soon</p>
+    </div>
+
+
+</div>
+
+
+    <div class="right-menu">
+        <div class="right-menu-header">
+            <div class="right-menu-header-item"><img src="/main/icons/earth.png" alt="Earth"></div>
+            <div class="right-menu-header-item"><img src="/main/icons/tree.png" alt="Earth">0</div>
+            <div class="right-menu-header-item"><img src="/main/icons/bee.png" alt="Earth">300</div>
+            <div class="right-menu-header-item"><img src="/main/icons/heart.png" alt="Earth">5</div>
+        </div>
+        <div class="right-menu-item-1 missions">
+                <p class="right-menu-item-1-1">Monthly challenges unlock soon!</p>
+                <p class="missions2">Complete each month’s challenge to earn exclusive badges</p>
+                <button class="start-mission-button">START A QUIZ</button>
+        </div>
+
+    </div>
+
+    <footer></footer>
+</body>
+<script src="/main/main.js"></script>
+
+</html>

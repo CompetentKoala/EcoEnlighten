@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="/main/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" />
+</head>
+<header></header>
+
+<body>
+    <div class="stars"></div>
+
+    <div class="left-area">
+        <p class="left-menu-header"><span class="left-header-img"><img class="icon" src="/main/icons/LOGO.png" alt=""></span><span class="left-header-text"></span></p>
+        <div class="left-menu-box">
+            <div onclick="setMenuSelection(1)" class="left-menu-item home"><img src="/main/icons/house.png" alt="Home"><span>LEARN</span></div>
+            <div onclick="setMenuSelection(2)" class="left-menu-item leaderboard"><img src="/main/icons/medal.png" alt="Leaderboard"><span>LEADERBOARD</span></div>
+            <div onclick="setMenuSelection(3)" class="left-menu-item mission"><img src="/main/icons/treasure-chest.png" alt="Quests"><span>MISSIONS</span></div>
+            <div onclick="setMenuSelection(4)" class="left-menu-item market"><img src="/main/icons/market.png" alt="market"><span>MARKETS</span></div>
+            <div onclick="setMenuSelection(5)" class="left-menu-item menu-profile"><img src="/main/icons/woman.png" alt="Home"><span>PROFILE</span></div>
+            <div onclick="setMenuSelection(6)" class="left-menu-item other"><img src="/icons/other.svg" alt="Home"><span>MORE</span></div>
+        </div>
+    </div>
+
+    <div class="center-area">
+        <div class="center-header">
+            <div class="center-header-1">
+                <p>LEVEL 1: ECO NOVICE</p>
+                <p>PART 1:  Foundations of Sustainability</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <div class="right-menu-header">
+            <div class="right-menu-header-item"><img src="/main/icons/earth.png" alt="Earth">
+                <div class="popup popup-eco">This is your popup content!</div>
+            </div>
+            <div class="right-menu-header-item"><img src="/main/icons/tree.png" alt="Earth">0
+                <div class="popup popup-streak">DAILY STREAK</div>
+            </div>
+            <div class="right-menu-header-item" id="bees"><img src="/main/icons/bee.png" alt="Bees">300
+                <div class="popup">This is your popup content!
+                    <img src="/main/icons/beehive.png" alt="Beehive">
+                </div>
+            </div>
+            <p class="right-menu-header-item hearts" id=hearts>
+                <div class="popup">This is your popup content!</div>
+            </p>
+        </div>
+
+    </div>
+
+<div class="center-area-global">
+    <div class='center-area-flex-box'>
+
+        <div class="skill-tree-flex-box">
+        <div class="skill-tree-section-1">
+
+            <div class="outer-circle quiz-1-1-oc">
+                <p class="start-here">Start Here</p>
+                <div class="lesson-button quiz-1-1-ls">
+                    <button class="lesson quiz-1-1-l"></button>
+                </div>
+            </div>
+
+
+            <div class="outer-circle quiz-1-2-oc">
+                <p class="start-here next-lesson-2">Next Lesson</p>
+                <div class="lesson-button quiz-1-2-ls">
+                    <button class="lesson quiz-1-2 quiz-1-2-l"></button>
+                </div>
+            </div>
+
+            <div class="outer-circle quiz-1-3-oc">
+                <p class="start-here next-lesson-3">Next Lesson</p>
+                <div class="lesson-button quiz-1-3-ls">
+                    <button class="lesson quiz-1-3 quiz-1-3-l"></button>
+                </div>
+            </div>
+            <div class="treasure-button-shadow-1 quiz-1-t"><img class="treasure-button-2" src="/main/icons/treasure-button.png" alt=""></div>
+            <div class="outer-circle">
+                <div class="lesson-button">
+                    <button class="lesson quiz-1-5"></button>
+                </div>
+            </div>
+            <div class="outer-circle">
+                <div class="lesson-button">
+                    <button class="lesson quiz-1-6"></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    </div>
+</div>
+
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <h2>Create Your Profile</h2>
+        <form id="profileForm">
+            <input placeholder="Name(or Nickname)" type="text" id="username" name="username" required>
+            <input placeholder="Email" type="email" id="email" name="email" required>
+            <input placeholder="Password" type="password" id="password" name="password" required>
+            <button class="submit-account-button" type="submit">CREATE ACCOUNT</button>
+            <p class="create-profile-p">By signing in to Ecoenlighten, you agree to our Terms and Privacy Policy.</p>
+            <p class="create-profile-p">This site is protected by reCAPTCHA Enterprise and the<br>Google Privacy Policy and Terms of Service apply.</p>
+        </form>
+        <button class="close-popup" id="closePopup">X</button>
+    </div>
+</div>
+
+    <div class="right-menu">
+
+        <div class="right-menu-item-1">
+            <div class="right-menu-item-1-1">
+                <p>Unlock Leaderboards!</p>
+            </div>
+            <div class="right-menu-item-1-2">
+                <img class="locked" src="/main/icons/lock.png" alt="">
+                <p>Complete 10 more lessons to start competing!</p>
+            </div>
+        </div>
+        <div class="right-menu-item-2">
+
+            <div class="right-menu-item-2-1">
+                <p>Daily Quests</p>
+                <p>View All</p>
+            </div>
+
+            <div class="right-menu-item-2-2">
+                <div class="lightning">
+                    <img src="/main/icons/lightning.png" alt="">
+                </div>
+
+                <div class="right-menu-item-2-2-1">
+                    <div>
+                        <p>Earn 10 xp</p>
+                    </div>
+                    <div class='right-menu-item-2-2-2'>
+                        <div class="progress-bar"></div>
+                        <img class="treasure-chest" src="/main/icons/treasure-chest.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right-menu-item-3">
+            <p>Create a profile to save your progress!</p>
+            <button class="create-profile-button open-popup">CREATE A PROFILE</button>
+            <button class="sign-in-button">SIGN IN</button>
+        </div>
+
+    </div>
+
+    <footer></footer>
+</body>
+<script src="/main/main.js"></script>
+
+</html>
